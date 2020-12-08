@@ -1,3 +1,4 @@
+To automatically search git logs by keywords and make the update easier.
 # requirements document 
 ## summary
 1. scripts for pick out commit logs for our provided keywords
