@@ -7,8 +7,9 @@ def parse_keywords():
 def grep_keywords():
     # search all the keywords and cross_keywords in the git repo(from config)
     # save results for all keywords and cross-keywords.
+        # git log --grep $$ -E > commits/$$.commits
     # make soft-links for each target keyword,
-    
+        # ln -s commits/$$.commits target-commits/$$.commits
     # show the log numbers of them  
     print_res_of_target_keyword() 
     pass
