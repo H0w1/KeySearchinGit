@@ -1,0 +1,5 @@
+{
+	// where the target git repo is
+	"RepoDir": ".",
+	"RepoBranch": "master"
+}
