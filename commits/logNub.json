@@ -1,0 +1,17 @@
+{
+ "compilerXoptimiz": 593,
+ "securityX[CCs+op]": 250,
+ "attackX[CCs+op]": 50,
+ "raceX[CCs+op]": 84,
+ "cfiX[CCs+op]": 25,
+ "info-leakX[CCs+op]": 16,
+ "access-controlX[CCs+op]": 5,
+ "UAFX[CCs+op]": 94,
+ "reorderX[CCs+op]": 213,
+ "compiler.*assum": 20,
+ "[cc+opti].*break": 42,
+ "[cc+opti].*introduc": 67,
+ "ub": 502,
+ "side-channel": 30,
+ "struct-padding": 10
+}

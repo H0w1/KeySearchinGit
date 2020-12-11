@@ -1,5 +1,4 @@
 {
-	// where the target git repo is
-	"RepoDir": ".",
+	"RepoDir": "/home/seclab/xujianhao/linux",
 	"RepoBranch": "master"
 }

@@ -17,26 +17,26 @@
         "UAF": "[Uu]se[ -][aA]fter[ -][Ff]ree|UAF",
         "access-control": "[Aa]ccess[ -][Cc]ontrol",
         "reorder": "[Rr]eorder",
-        "compiler.*assum": "'[Cc]ompiler assum|[Gg]cc assum|GCC assum|[Cc]lang assum|CLANG assum",
-        "(cc+opti ).* break": "[Oo]ptimiz[ae].*break|[Gg]cc.*break|GCC.*break|[Cc]lang.*break|CLANG.*break",
-        "(cc+opti ).*introduc": "[Oo]ptimiz[ae].*introduc|[Gg]cc.*introduc|GCC.*introduc|[Cc]lang.*introduc|CLANG.*introduc"
+        "compiler.*assum": "[Cc]ompiler assum|[Gg]cc assum|GCC assum|[Cc]lang assum|CLANG assum",
+        "[cc+opti ].* break": "[Oo]ptimiz[ae].*break|[Gg]cc.*break|GCC.*break|[Cc]lang.*break|CLANG.*break",
+        "[cc+opti ].*introduc": "[Oo]ptimiz[ae].*introduc|[Gg]cc.*introduc|GCC.*introduc|[Cc]lang.*introduc|CLANG.*introduc"
     },
 
     {
         "compilerXoptimiz": ["compiler", "optimiz"],
-        "securityX(CCs+op)": ["security","CCs+Op"],
-        "attackX(CCs+op)": ["attack","CCs+Op"],
-        "raceX(CCs+op)": ["race","CCs+Op"],
-        "cfiX(CCs+op)": ["cfi","CCs+Op"],
-        "info-leakX(CCs+op)": ["info-leak","CCs+Op"],
-        "access-controlX(CCs+op)": ["access-control","CCs+Op"],
-        "UAFX(CCs+op)": ["UAF", "CCs+Op"],
-        "reorderX(CCs+op)": ["[Rr]eorder","CCs+Op"]
+        "securityX[CCs+op]": ["security","CCs+Op"],
+        "attackX[CCs+op]": ["attack","CCs+Op"],
+        "raceX[CCs+op]": ["race","CCs+Op"],
+        "cfiX[CCs+op]": ["cfi","CCs+Op"],
+        "info-leakX[CCs+op]": ["info-leak","CCs+Op"],
+        "access-controlX[CCs+op]": ["access-control","CCs+Op"],
+        "UAFX[CCs+op]": ["UAF", "CCs+Op"],
+        "reorderX[CCs+op]": ["reorder","CCs+Op"]
     },
     {
-        "targetKeys": ["compilerXoptimiz", "securityX(CCs+op)", "attackX(CCs+op)", "raceX(CCs+op)", "cfiX(CCs+op)",
-            "info-leakX(CCs+op)", "access-controlX(CCs+op)", "UAFX(CCs+op)"," reorderX(CCs+op)", 
-            "compiler.*assum", "(cc+opti ).* break", "(cc+opti ).*introduc",
+        "targetKeys": ["compilerXoptimiz", "securityX[CCs+op]", "attackX[CCs+op]", "raceX[CCs+op]", "cfiX[CCs+op]",
+            "info-leakX[CCs+op]", "access-controlX[CCs+op]", "UAFX[CCs+op]","reorderX[CCs+op]", 
+            "compiler.*assum", "[cc+opti ].* break", "[cc+opti ].*introduc",
             "ub", "side-channel", "struct-padding"
         ]
     }
