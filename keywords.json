@@ -4,6 +4,7 @@
         "clang": "[Cc]lang|CLANG",
         "compiler": "[Cc]ompiler",
         "optimiz": "[Oo]ptimiz[ae]",
+        "optimis": "[Oo]ptimis[ae]",
         "CCs": "[Gg]cc|GCC|[Cc]lang|CLANG|[Cc]ompiler",
         "CCs+Op": "[Gg]cc|GCC|[Cc]lang|CLANG|[Cc]ompiler|[Oo]ptimiz[ae]",
         "security": "[Ss]ecurity|[Dd]anger",
@@ -19,11 +20,14 @@
         "reorder": "[Rr]eorder",
         "compiler.*assum": "[Cc]ompiler assum|[Gg]cc assum|GCC assum|[Cc]lang assum|CLANG assum",
         "[cc+opti ].* break": "[Oo]ptimiz[ae].*break|[Gg]cc.*break|GCC.*break|[Cc]lang.*break|CLANG.*break",
-        "[cc+opti ].*introduc": "[Oo]ptimiz[ae].*introduc|[Gg]cc.*introduc|GCC.*introduc|[Cc]lang.*introduc|CLANG.*introduc"
+        "[cc+opti ].*introduc": "[Oo]ptimiz[ae].*introduc|[Gg]cc.*introduc|GCC.*introduc|[Cc]lang.*introduc|CLANG.*introduc",
+        "data-race": "[Dd]ata[ -][Rr]ace"
+        
     },
 
     {
         "compilerXoptimiz": ["compiler", "optimiz"],
+        "compilerXoptimis": ["compiler", "optimis"],
         "securityX[CCs+op]": ["security","CCs+Op"],
         "attackX[CCs+op]": ["attack","CCs+Op"],
         "raceX[CCs+op]": ["race","CCs+Op"],
@@ -31,13 +35,14 @@
         "info-leakX[CCs+op]": ["info-leak","CCs+Op"],
         "access-controlX[CCs+op]": ["access-control","CCs+Op"],
         "UAFX[CCs+op]": ["UAF", "CCs+Op"],
-        "reorderX[CCs+op]": ["reorder","CCs+Op"]
+        "reorderX[CCs+op]": ["reorder","CCs+Op"],
+        "dataraceX[CCs+op]":["data-race","CCs+Op"]
     },
     {
-        "targetKeys": ["compilerXoptimiz", "securityX[CCs+op]", "attackX[CCs+op]", "raceX[CCs+op]", "cfiX[CCs+op]",
+        "targetKeys": ["compilerXoptimiz", "compilerXoptimis", "securityX[CCs+op]", "attackX[CCs+op]", "raceX[CCs+op]", "cfiX[CCs+op]",
             "info-leakX[CCs+op]", "access-controlX[CCs+op]", "UAFX[CCs+op]","reorderX[CCs+op]", 
             "compiler.*assum", "[cc+opti ].* break", "[cc+opti ].*introduc",
-            "ub", "side-channel", "struct-padding"
+            "ub", "side-channel", "struct-padding", "data-race","dataraceX[CCs+op]"
         ]
     }
 

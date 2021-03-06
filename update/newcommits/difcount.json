@@ -9,9 +9,11 @@
  "UAFX[CCs+op]": 18,
  "reorderX[CCs+op]": 19,
  "compiler.*assum": 0,
- "[cc+opti].*break": 6,
- "[cc+opti].*introduc": 7,
- "ub": 116,
- "side-channel": 4,
- "struct-padding": 0
+ "[cc+opti].*break": 0,
+ "[cc+opti].*introduc": 0,
+ "ub": 0,
+ "side-channel": 0,
+ "struct-padding": 0,
+ "data-race": 0,
+ "dataraceX[CCs+op]": 11
 }

@@ -13,5 +13,7 @@
  "[cc+opti].*introduc": 74,
  "ub": 618,
  "side-channel": 34,
- "struct-padding": 10
+ "struct-padding": 10,
+ "data-race": 245,
+ "dataraceX[CCs+op]": 35
 }
